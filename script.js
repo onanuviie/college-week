@@ -47,7 +47,7 @@ function generateQuestion() {
             console.log(questions)
         }
 
-        if (optionValue === "Bible Knowledge") {
+        if (optionValue === "Knowledge") {
             questions.splice(0)
             questions.push(...bibleQuestions)
             console.log(questions)
