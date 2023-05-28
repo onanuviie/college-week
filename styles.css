@@ -113,3 +113,11 @@ label {
     transform: rotateY(180deg);
 }
 
+.link {
+    margin-top: 0.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: #231515b0;
+}

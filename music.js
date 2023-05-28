@@ -17,7 +17,7 @@ const musicQuestions = [
     {
         id: 3,
         question: "What genre of music is Fela Kuti known for pioneering in Nigeria?",
-        answer: "Fela Kuti "
+        answer: "Afrobeat"
     },
     {
         id: 4,
