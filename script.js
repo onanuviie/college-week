@@ -3,6 +3,7 @@ import { moviesQuestions } from "./movies.js"
 import { literatureQuestions } from "./literature.js"
 import { bibleQuestions } from "./bibleKnowledge.js"
 import { foodQuestions } from "./food.js"
+import { historyQuestions } from "./history.js"
 
 const quizBox = document.querySelector('.quiz-box')
 const quizButton = document.querySelector('.quiz-button')
@@ -57,6 +58,12 @@ function generateQuestion() {
         if (optionValue === "Food") {
             questions.splice(0)
             questions.push(...foodQuestions)
+            console.log(questions)
+        }
+
+        if (optionValue === "History") {
+            questions.splice(0)
+            questions.push(...historyQuestions)
             console.log(questions)
         }
     }
