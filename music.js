@@ -29,6 +29,11 @@ const musicQuestions = [
         question: "Which Nigerian musician popularized the 'pon pon' sound in Afrobeats?",
         answer: "Mr. Eazi"
     },
+    {
+        id: 6,
+        question: "Who is the lead singer of the Nigerian band, The Cavemen?",
+        answer: "Kingsley Okorie"
+    },
 ]
 
 
