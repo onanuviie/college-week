@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(143, 136, 136);
+    height: 90vh;
+    overflow: hidden;
+    font-family: 'Lora', serif;
+}
+
+.quiz-topic-controls {
+    margin-bottom: 4rem;
+    height: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #8ca6cd;
+    box-shadow: 0 0 5px rgba(98, 121, 139, 0.5);
+}
+
+select {
+    height: 1.6rem;
+    margin-top: 0.6rem;
+    margin-left: 0.4rem;
+}
+
+label {
+    margin: 0.7rem 0;
+}
+
+.quiz-button {
+    width: 7rem;
+    height: 1.7rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin: auto 2.3rem;
+    background-color: rgb(6, 87, 87);
+    color: rgb(255, 255, 255);
+    padding: .5rem .3rem;
+    cursor: pointer;
+}
+
+.quiz-button:hover {
+    background-color: rgb(13, 136, 136);
+}
+
+.quiz-game-area {
+    display: flex;
+    width: 100vw;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-box {
+    margin-top: 4rem;
+    width: 57%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: .5rem;
+    box-shadow: 0 0 5px 2px rgba(31, 31, 144, 0.3);
+    background-color: rgb(109, 138, 218);
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateY(var(--rotate-y, 0))
+    translateY(var(--translate-y, 0));
+    transition: 150ms;
+    cursor: pointer;
+}
+
+.quiz:hover {
+    --translate-y: -2px;
+    box-shadow: 0 0 5px 2px rgba(77, 74, 74, 0.5);
+    background-color: rgb(84, 130, 255);
+}
+
+.question-block {
+    margin: auto 1rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.option-box {
+    margin-top: 1rem;
+}
+
+.quiz-box.flip {
+    --rotate-y: 180deg;
+}
+
+.quiz-box .front {
+    left: 0;
+    position: absolute;
+}
+
+
+.quiz-box .front,
+.quiz-box .back {
+    padding: 1rem;
+    backface-visibility: hidden;
+} 
+
+.quiz-box .back {
+    position: absolute;
+    transform: rotateY(180deg);
+}
+
