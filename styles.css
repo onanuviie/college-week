@@ -11,7 +11,7 @@ body {
     background-image: url(bg-pattern-intro-left-desktop.svg),
                       url(bg-pattern-intro-right-desktop.svg);
     background-repeat: no-repeat;
-    background-position: bottom -50px left, top -120px right;
+    background-position: bottom -40px left, top -80px right;
     height: 90vh;
     overflow: hidden;
     font-family: 'Lato', sans-serif;
@@ -24,6 +24,7 @@ body {
     justify-content: flex-end;
     background-color: #56212e;
     box-shadow: 0 1px 5px rgba(63, 83, 97, 0.5);
+    font-weight: bold;
 }
 
 select {
@@ -71,6 +72,7 @@ label {
     margin-top: 4rem;
     width: 57%;
     height: 60%;
+    color: #ffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -124,10 +126,11 @@ label {
 .link {
     margin-top: 0.8rem;
     font-family: 'Julius Sans One', sans-serif;
-    font-weight: bold;
+    
 }
 
 a {
+    color: #690d0db0;
+    font-weight: bold;
     text-decoration: none;
-    color: #121111b0;
 }

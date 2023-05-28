@@ -24,6 +24,12 @@ const musicQuestions = [
         question: "Which Nigerian artist collaborated with Drake on the hit song 'One Dance'?",
         answer: "Wizkid"
     },
+    {
+        id: 5,
+        question: "Which Nigerian musician popularized the 'pon pon' sound in Afrobeats?",
+        answer: "Mr. Eazi"
+    },
 ]
+
 
 export { musicQuestions }
