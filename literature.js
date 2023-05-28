@@ -46,7 +46,9 @@ const literatureQuestions = [
     },
     {
         id: 9,
-        question: "What is the title of George Orwell's dystopian novel published in 1949?",
-        answer: "1984"
+        question: "Which novel by F. Scott Fitzgerald is known for its portrayal of the Roaring Twenties and the character Jay Gatsby?",
+        answer: "J.K Rowling"
     },
 ]
+
+export { literatureQuestions }

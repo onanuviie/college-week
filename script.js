@@ -1,5 +1,6 @@
 import { musicQuestions } from "./music.js"
 import { moviesQuestions } from "./movies.js"
+import { literatureQuestions } from "./literature.js"
 
 const quizBox = document.querySelector('.quiz-box')
 const quizButton = document.querySelector('.quiz-button')
@@ -36,6 +37,12 @@ function generateQuestion() {
         if (optionValue === "Movies") {
             questions.splice(0)
             questions.push(...moviesQuestions)
+            console.log(questions)
+        }
+
+        if (optionValue === "Literature") {
+            questions.splice(0)
+            questions.push(...literatureQuestions)
             console.log(questions)
         }
     }
